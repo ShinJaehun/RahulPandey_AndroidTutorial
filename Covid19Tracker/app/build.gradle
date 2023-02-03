@@ -30,6 +30,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    // nice-spinner 때문에 추가했는데 오히려 오류가 발생함!
+//    repositories {
+//        maven { url "https://jitpack.io" }
+//    }
+
 }
 
 dependencies {
@@ -44,4 +54,9 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.robinhood.spark:spark:1.2.0'
+
+    implementation "com.github.skydoves:powerspinner:1.2.4"
+
 }
