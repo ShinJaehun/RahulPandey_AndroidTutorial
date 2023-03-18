@@ -46,6 +46,7 @@ class LoginActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
+        // 그냥 영상에 나온대로 deprecated된 방법으로 작성함
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
